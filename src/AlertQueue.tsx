@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Alert } from './types';
+import type { Alert } from './types';
 import { alerts as initialAlerts } from './data';
 
 interface AlertQueueProps {

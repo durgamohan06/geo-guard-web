@@ -3,7 +3,7 @@ import React from 'react';
 import MapView from './MapView';
 import AlertQueue from './AlertQueue';
 import AuditTrail from './AuditTrail';
-import { Alert } from './types';
+import type { Alert } from './types';
 
 interface DashboardProps {
   alerts: Alert[];

@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { AuditLog } from './types';
-import { auditLogs } from './data';
+import React from "react";
+import type { AuditLog } from "./types";
+import { auditLogs } from "./data";
 
 const AuditTrail: React.FC = () => {
   return (
@@ -19,10 +18,12 @@ const AuditTrail: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {auditLogs.map(log => (
+            {auditLogs.map((log) => (
               <tr key={log.id}>
                 <td className="py-2 px-4 border-b">{log.id}</td>
-                <td className="py-2 px-4 border-b">{new Date(log.timestamp).toLocaleString()}</td>
+                <td className="py-2 px-4 border-b">
+                  {new Date(log.timestamp).toLocaleString()}
+                </td>
                 <td className="py-2 px-4 border-b">{log.authority}</td>
                 <td className="py-2 px-4 border-b">{log.action}</td>
                 <td className="py-2 px-4 border-b">{log.details}</td>

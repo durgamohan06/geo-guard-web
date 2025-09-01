@@ -1,5 +1,5 @@
 
-import { Alert, AuditLog, Tourist } from "./types";
+import type { Alert, AuditLog, Tourist } from "./types";
 
 
 export const tourists: Tourist[] = [
